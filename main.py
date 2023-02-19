@@ -24,13 +24,17 @@ def find_mismatch(text):
             opening_brackets_stack.pop()
             pass
 
+        if not opening_brackets_stack:
+          print("Success")
+        else: opening_brackets_stack[0].position
 
 def main():
     text = input()
     mismatch = find_mismatch(text)
     # Printing answer, write your code here
-    if "I" in text:
+    if text[0]=="I":
       print(mismatch)
 
 if __name__ == "__main__":
     main()
+
