@@ -1,4 +1,4 @@
-# python3
+# python3 #  Aleksis Boters,211RDB214
 
 from collections import namedtuple
 
@@ -14,6 +14,7 @@ def find_mismatch(text):
     for i, next in enumerate(text):
         if next in "([{":
             # Process opening bracket, write your code here
+            opening_bracket_stack.append(Bracket(next,i))
             pass
 
         if next in ")]}":
